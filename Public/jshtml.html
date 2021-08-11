@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p class="para">Hello world</p>
+    <p class="para">Hello world 2</p>
+  <p id="date"></p>
+  <img id="myimage" src="../Images/image.png" alt="sorry" width="200" height="200">
+  <button type="button" onclick="showDate();">Date and time</button>
+  <button type="button" onclick="createE();">Create Element</button>
+    <!--writing inline js-->
+    <button onclick="document.getElementById('demo').innerHTML = Date();">Inline Javascript</button>
+    <!--linking to js file-->
+  <script type="text/javascript" src="../JS/script.js">
+  </script>
+</body>
+</html>

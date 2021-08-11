@@ -1,0 +1,91 @@
+grid and flexbox
+responsive depending on device
+
+css styling
+identifier{
+        property:value;
+}
+identifiers: id class element name
+id ----- #one{}
+class ------ .grid-container{}
+element name ------- div{}
+colour mapping
+
+flexbox = horizontal or vertical arrangement
+dynamism
+flex-grow --- once one item grows, all do
+
+CSS
+you style HTML elements using css by using the following tags
+    1. id : styles uniquely
+    2. class : groups a style and associates it with any element falling within the class
+    3. element name : styles any element without an id or a class
+
+we have three forms of css
+    1. internal : written inside the html file
+    2. external : written outside the html file
+    3. inline : written using the style attribute inside the html file
+
+
+
+
+function  nameoffunction(){
+          //code
+}
+calling function - nameoffunction();  - doesn't automatically run unless an event occurs
+DOM - Document Object Model
+JAVASCRIPT (DOM)
+//find elements using DOM, we have the following methods:
+    1. document.getElementById('id')
+    2. document.getElementByTagName('element')
+    3. document.getElementByClassName('class name')
+    4. document.querySelectorAll(css selector)
+
+using JS for styling
+      document.getElementById('id').style.property
+
+element.attribute method = change the attribute value of html elements
+
+document.write overrides everything and changes all content
+
+-----------------------------------------------------------------------------
+CSS
+Common properties - can be applied to any element
+Unique properties - can only be applied to a specific element
+
+--------------------------------------------------------------------------
+forms
+attributes
+1. action - the file to/from which data from the server is picked
+2. method -  post - more secure ,  get - changing user data or quick access
+3. enctype - multimedia files expected eg. images
+
+---------------------------------------------------------------------------
+3. iframe
+4. text vertically arranged
+5. in flexbox, have a card in each item
+6. contact info
+*responsiveness
+
+----------------------------------------------------------------------
+meta charset= character set used
+meta name: keywords - keywords for search engine
+           author
+           description
+           viewport - make website look good on all devices
+     http-equiv="refresh" content="30" - refresh document every 30s
+
+---------------------------------------------------------------------------------------
+There are four different techniques to create multi-column layouts. Each technique has its pros and cons:
+
+1.CSS framework - Bootstrap & W3.CSS
+2.CSS float property -as long as you know float and clear - Disadvantages: Floating elements are tied to the document
+ flow, which may harm the flexibility.
+3.CSS flexbox - elements behave more predictably
+4.CSS grid
+
+web safe fonts*
+--------------------------------------------------------------------------------------------------
+short cuts: !+[tab] -> basic structure
+            tag+.+(name)+[tab] -> element with specific class
+            tag+#+(name)+[tab] -> element with specific id

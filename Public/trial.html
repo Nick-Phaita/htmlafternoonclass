@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>HTML elements</title>
+  <link rel="stylesheet" href="../CSS/cssproperties.css" type="text/css">
+  <style>
+    /*styling using the element name*/
+    p{
+      background-color: black;
+      color: white;
+    }
+    /*styling using id*/
+    #para1{
+      background-color: red;
+      color: yellow;
+    }
+    /*styling using class name*/
+    .divHellos{
+      background-color: purple;
+      color: white;
+    }
+    .divHellos>p{
+      background-color: purple;
+    }
+
+  </style>
+</head>
+<body>
+  <p id="para1" title="Hello" >Hello world</p>
+  <p><code>document.write(<var>user-name</var>)</code></p>
+  <p>Hello world 2</p>
+  <p>Hello world 3</p>
+  <div class="divHellos">
+    <p>Hello world</p>
+    <p>Hello world 2</p>
+    <p>Hello world 3</p>
+  </div>
+  <!--textual elements-->
+  <!--headings-->
+  <h1>One</h1>
+  <h2>Two</h2>
+  <h3>Three</h3>
+  <h4>Four</h4>
+  <h5>Five</h5>
+  <h6>Six</h6>
+  <!--paragraph-->
+  <p style="background-color: yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur
+    delectus facilis hic nihil odit quidem quisquam voluptatibus. Accusamus assumenda earum, exercitationem fuga magni
+    officia quia quis sit veritatis voluptate!</p>
+  <!--blockquote-->
+  <blockquote style="background-color: aqua; font-family: cursive; color: saddlebrown">Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Commodi ea eius impedit nisi non obcaecati reiciendis repellat, reprehenderit
+    voluptas voluptatibus. Adipisci dolor porro quibusdam saepe soluta temporibus veniam veritatis. Eum?</blockquote>
+  <!--  list groups-->
+  <!--unordered list-->
+  <ul>
+    <li>Milk</li>
+    <li>Bread</li>
+    <li>Flour</li>
+  </ul>
+  <!--ordered list-->
+  <ol type="A">
+    <li>Manchester City</li>
+    <li>Manchester United</li>
+    <li>Liverpool</li>
+    <li>Chelsea</li>
+  </ol>
+  <!--text links-->
+  <!--anchor links-->
+  <!--local links-->
+  <a href="gallery.html" target="targetframe">Gallery</a>
+  <!--external links-->
+  <a href="https://www.youtube.com/">Youtube</a>
+  <!--buttons-->
+  <a href="https://nike.com/">
+    <button>Click me</button>
+  </a>
+  <!--images-->
+  <img src="" alt="image not found " width="120" height="120" >
+  <!--elements as links-->
+  <a href="https://www.youtube.com/">
+    <img src="../Images/image.png" alt="image not found " width="120" height="120" border="4">
+  </a>
+  <br>
+  <!--tables-->
+  <table id="studentTable">
+    <caption>Students</caption>
+    <tr>
+    <th>Student Name</th>
+    <th>Student Class</th>
+    <th>Student Image</th>
+    <th>Student Age</th>
+    </tr>
+  <!--define the rows-->
+    <tr>
+      <td>Nick Phaita</td>
+      <td>Safari MIT</td>
+      <td>
+        <img src="../Images/image.png" alt="" width="100" height="100">
+      </td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Karanja Maina</td>
+      <td>Safari MIT</td>
+      <td>
+        <img src="../Images/image.png" alt="" width="100" height="100">
+      </td>
+      <td>20</td>
+    </tr>
+  </table>
+  <!--define columns-->
+  <!--iframe - copy link from specific site eg. youtube-->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/AnW-e4cxOek" title="Youtube video player"
+          frameborder="0">
+  </iframe>
+  <!--video-->
+  <video width="500" height="500" controls>
+    <source src="" type="video/mp4">
+  </video>
+  <!--audios-->
+  <audio controls>
+    <source src="" type="audio/mpeg">
+  </audio>
+  <!--div css stylings-->
+  <div id="exampleDiv">
+    <nav>
+      <ul>
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">Shop</a>
+      </li>
+      <li>
+        <a href="">Gallery</a>
+      </li>
+      <li>
+        <a href="">Contact</a>
+      </li>
+      </ul>
+    </nav>
+<!--    <a id="linkStyling" href="">Link a</a>-->
+  </div>
+
+
+</body>
+</html>

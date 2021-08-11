@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS FORMS</title>
+    <link rel="stylesheet" href="../CSS/form.css" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+      <!--form-->
+    <form action="#" method="post" enctype="multipart/form-data">
+<!--     inside the form we have inputs-->
+        <fieldset>
+            <legend>User Names</legend>
+        <div class="row">
+            <div class="col-25">
+            <label for="fname">Full Name</label>
+        </div>
+            <div class="col-75">
+                <input type="text"  name="fname" id="fname" placeholder="Enter your full name">
+            </div>
+        </div>
+        </fieldset>
+            <div class="row"><div class="col-25">
+                <label for="email">Email Address</label>
+            </div>
+                <div class="col-75">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                </div>
+            </div>
+            <div class="row"><div class="col-25">
+                <label for="password">Password</label>
+            </div>
+                <div class="col-75">
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                </div>
+            </div>
+
+            <!--dropdown-->
+        <div class="row"> <div class="col-25">
+            <label for="country">Country of Origin</label>
+        </div>
+            <div class="col-75">
+                <select id="country" name="country">
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="tanzania">Tanzania</option>
+                </select>
+            </div>
+        </div>
+
+            <!--attachments-->
+        <div class="row"><div class="col-25">
+            <label >User Image</label>
+        </div>
+            <div class="col-75">
+                <input type="file" name="profilePic" multiple>
+            </div>
+        </div>
+
+            <!--textarea-->
+        <div class="row"><div class="col-25">
+            <label for="bio">Enter Bio</label>
+        </div>
+            <div class="col-75">
+                <textarea name="bio" id="bio" placeholder="Enter your bio" cols="100" rows="10" ></textarea>
+            </div>
+        </div>
+
+            <!--submit and reset buttons-->
+            <div class="row">
+                <input type="submit" name="submit" value="Submit Profile">
+                <input type="reset" name="reset" value="Reset Form">
+            </div>
+
+
+
+    </form>
+    <iframe src="#" name="iframe_a" title="Iframe Example"></iframe>
+
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+</div>
+</body>
+</html>

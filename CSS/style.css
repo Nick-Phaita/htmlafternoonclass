@@ -1,0 +1,167 @@
+.grid-container{
+    display: grid;
+    padding: 10px;
+    grid-template-areas:'a a a a a a'
+                        'b b c c c d'
+                        'e e e e e e'
+                        'f f f f f f';
+    /* repeat according to no. of divs*/
+    /*justify-content: space-between;*/
+    /*justify content : start, end, center, space-around, space-evenly, space-between*/
+    grid-auto-columns: minmax(100px, auto);
+    box-sizing: border-box;
+}
+
+#one{
+    grid-area: a;
+}
+#two{
+    grid-area: b;
+}
+#three{
+    grid-area: c ;
+    margin-left: 10px;
+}
+#four{
+    margin-left: 10px;
+    grid-area: d;
+    word-wrap: normal;
+}
+#five{
+    grid-area: e;
+}
+#six{
+    grid-area: f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#onef{
+    background-color:red;
+    margin: 20px;
+    padding: 10px;
+}
+#twof{
+    background-color:seagreen;
+    margin: 20px;
+    padding: 10px;
+}
+#threef{
+    background-color:yellowgreen;
+    margin: 20px;
+    padding: 10px;
+}
+#fourf{
+    background-color:lightcoral;
+    margin: 20px;
+    padding: 10px;
+}
+.flex-container{
+    display: flex;
+    background-color: black;
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    flex-flow: row nowrap;
+    /*flex flow is a mix of flex-direction and flex-wrap*/
+    /*align-items: stretch;*/
+    /*align-content: center;*/
+    justify-content: space-evenly;
+}
+/*media queries - condition if met gives certain style*/
+/*horizontal navigation styling*/
+#navUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom:0;
+}
+#navUl li{
+    float: left;
+}
+#navUl li a{
+    display: block ;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+#navUl li a:hover{
+    background-color: green;
+}
+#ul2{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+}
+.list{
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+.list a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+}
+.list a:hover{
+    background-color: yellow;
+}
+li .list{
+    height: 60px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+img{
+    border-radius: 5px 5px 0 0;
+    margin: 20px;
+}
+.container{
+    padding: 2px 16px;
+    text-align: center;
+}
+#btnadd , #btnadd2 , #btnadd3, #btnadd4{
+    border-radius: 4px;
+    background-color: green;
+    margin-bottom: 4px;
+    color: white;
+}
+#btnadd:hover , #btnadd2:hover , #btnadd3:hover, #six img, #btnadd4{
+    cursor: pointer;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 364px) {
+    /* new code styles for this device*/
+    .grid-container {
+        display: grid;
+        grid-template-areas:'a a a a a a'
+                            'b b b b b b'
+                            'd d d d d d'
+                            'c c c c c c'
+                            'e e e e e e'
+                            'f f f f f f';
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

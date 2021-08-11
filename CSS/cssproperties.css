@@ -1,0 +1,53 @@
+/*links appear in four states : link , visited, hover, active*/
+#linkStyling{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: hotpink;
+}
+
+#linkStyling:hover{
+    color: grey;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px;
+    background-color: hotpink;
+}
+#linkStyling:active{
+     color: green;
+    padding: 10px;
+    margin: 10px;
+    background-color: hotpink;
+ }
+#studentTable{
+    font-family: Arial, sans-serif, Jokerman;
+    border-collapse: collapse;
+    width: 100%;
+}
+#studentTable td,#studentTable th{
+    border: 10px solid #ddd;
+    padding: 8px;
+}
+#studentTable th{
+    padding-bottom: 12px;
+    padding-top: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+#studentTable tr:hover{
+    background-color: #d4d4d4;
+}
+#exampleDiv{
+    background-image: url("../Images/simba.jpg");
+    height: 120px;
+    padding: 20px;
+    /*background-position: right bottom, left top;*/
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+ul{
+    list-style-type: none;
+}
